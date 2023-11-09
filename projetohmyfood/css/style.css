@@ -1,0 +1,161 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+p, span, ::placeholder, button, section, div {
+    font-family: "roboto";
+  }
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 13px 10px;
+  }
+
+.imglogo {
+    width: 40%;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+
+    header {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 38px;
+        padding-left: 8%;
+        padding-right: 4%;
+        background-color: #E5E7E8;
+        border: 1px solid #E5E7E8;
+        box-shadow: inset 0px 2px 3px -3px rgba(50, 50, 50, 0.75);
+    }
+
+    form ::placeholder {
+        background-color: #E5E7E8;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 15px;
+        color: black;
+    }
+
+    form i {
+        padding-top: 10px;
+    }
+
+    form input {
+        border: none;
+        width: fit-content;
+        background-color: #E5E7E8;
+    }
+
+    .header-h1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .header-h1 h1 {
+        width: 60%;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .header-titre {
+        background-color: #F6F7F7;
+    }
+
+    .header-titre p {
+        font-size: 18px;
+        margin-top: 0px;
+        }
+
+    .header-button {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 40px;
+        background-image: linear-gradient(#FF79DA, #9356DC);
+        border: none;
+        border-radius: 15px;
+        color: white;
+        font-family: "roboto";
+        box-shadow: 0 5px 5px -5px #323232;
+        font-size: 14px;
+        margin-bottom: 55px;
+        margin-top: 10px;
+    }
+
+    .header-button:hover {
+        background-image: linear-gradient(#FF79DA, #9356DC);
+        box-shadow: 0 5px 5px -5px black;
+    }
+
+
+    .nav-head {
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
