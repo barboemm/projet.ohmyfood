@@ -25,7 +25,7 @@ p, span, ::placeholder, button, section, div {
         text-align: center;
     }
 
-    form {
+    .form-search {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -37,7 +37,7 @@ p, span, ::placeholder, button, section, div {
         box-shadow: inset 0px 2px 3px -3px rgba(50, 50, 50, 0.75);
     }
 
-    form ::placeholder {
+    .form-search ::placeholder {
         background-color: #E5E7E8;
         font-size: 16px;
         font-weight: bold;
@@ -45,11 +45,11 @@ p, span, ::placeholder, button, section, div {
         color: black;
     }
 
-    form i {
+    .form-search i {
         padding-top: 10px;
     }
 
-    form input {
+    .form-search input {
         border: none;
         width: fit-content;
         background-color: #E5E7E8;
@@ -137,6 +137,7 @@ p, span, ::placeholder, button, section, div {
         border-radius: 16px;
         background-color: #F6F7F7;
         box-shadow: 0 2px 6px 0 rgba(84, 78, 78, 0.2), 0 4px 10px 0 rgba(142, 134, 134, 0.19);
+        transition: background-color 1s ease-in-out;
     }
 
     .nav-icone button:hover {
@@ -162,13 +163,19 @@ p, span, ::placeholder, button, section, div {
         color: gray;
     }
 
+    section {
+        height: 1080px;
+        background-color: #F6F7F7;
+        margin-top: 60px;
+    }
+
     .card {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 20px;
         width: 90%;
-        padding: 20px 0px 0px 40px 
+        gap: 20px;
+        padding: 20px 0px 0px 23px 
     }
 
     .card-titre h1 {
@@ -176,11 +183,13 @@ p, span, ::placeholder, button, section, div {
         font-weight: bold;
         font-family: "roboto";
         padding: 20px 0px 5px 0px;   
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     .card-restaurant {
         width: 100%;
-        height: 210px;
+        height: 218px;
         border-radius: 20px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: white;
@@ -203,32 +212,195 @@ p, span, ::placeholder, button, section, div {
 
     .card-restaurant-nouveau > img {
         display: block;
+        position: relative;
         width: 100%;
         object-fit: cover;
         object-position: center;
+        animation: picture1 5s;
+    }
+
+    .imgFadeIn1{
+        display: block;
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        animation: picture1 2.5s!important;        
+    }
+
+    .imgFadeIn2{
+        display: block;
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        animation: picture2 5s!important; 
+        
+    }
+
+    .card-restaurant-nouveau > .content {
+        position: absolute;
+        inset: 0;
+        left: 73%;
+        top: -3px;
+    }
+
+    .card-restaurant-nouveau > .content p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 76%;
+        height: 21px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #4F804F;
+        background-color: #99E2D0;
+    }
+
+    .card-main {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        padding-top: 10px;
+        font-size: 16px;
+        color: black;
+    }
+
+    .card-nom {
+        flex-grow: 4;
+        /*padding: 0px 50px 0px 10px;*/
+        /*margin-right: 10px;*/
+        font-weight: bold;
+        padding-left: 5%;
+    }
+
+    .card-nom p {
+        width: 200px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .card-local {
+        width: 80%;
+        padding: 0px 0px 10px 0px;
+        margin-right: 10px;
+        font-weight: normal;
+    }
+
+    .card-local p {
+        margin-top: 3px;
+    }
+
+    .card form {
+        flex-grow: 1;
+        border: none;
+    }
+
+    .card .form-button {
+        font-size: 20px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .card .form-button .fa-heart {
+        /*opacity: 0;*/
+        transition: 0.5 ease;
+        transform: translate(0);
+        transition: all 1s;
+        font-weight: 400;
+    }
+
+    .card .form-button:hover > .fa-heart {
+        /*opacity: 1;*/
+        background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to right, #FF79DA, #9356DC);
+        font-weight: 900;
+        -webkit-background-clip: text;
+    }
+
+    .form-container{
+        margin: none;
+    }
+
+    footer {
+        font-family: "roboto";
+        color: white;
+        background-color: #414141;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a:link {
+        color: white;
+    }
+
+    footer a:visited {
+        color: white;
+    }
+
+    .footer-titre {
+        
+    }
+
+    .footer-titre h1 {
+        
+        font-family: "Shrikhand";
+    }
+
+    .foot-icone {
+        display: flex;
+        width: 100%;
+    }
+
+    .loader {
+        background-color: black;
+        width:100vw;
+        height:100vh;
+        transition: all 2s loader;
+    }
+
+    @keyframes loader {
+        0% {
+          opacity: 0%;
+        }
+        50% {
+          opacity: 0%;
+        }
+        100% {
+          opacity: 100%;
+        }
+    }
+
+    @keyframes picture1 {
+        0% {
+          left: 100px;
+          opacity: 0%;
+        }
+        100% {
+          left: 0px;
+          opacity: 100%;
+        }
+    }
+
+    @keyframes picture2 {
+        0% {
+          left: 100px;
+          opacity: 0%;
+        }
+        20% {
+            left: 100px;
+          opacity: 0%;
+        }
+        30% {
+          left: 0px;
+          opacity: 100%;
+        }
     }
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
