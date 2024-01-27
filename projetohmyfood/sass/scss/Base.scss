@@ -1,0 +1,29 @@
+p, span, ::placeholder, button, section, div{
+    font-family: 'roboto';
+  }
+  
+  h1, h2{
+    font-family: 'Shrikhand';
+    
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+  }
+  :link{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+  }
+  a:visited{
+    color: black;
+    background-color:white;
+  }
+  a:active{
+   
+    color: black;
+    background-color: transparent;
+    
+  }

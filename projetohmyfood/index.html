@@ -11,7 +11,22 @@
     <script src="https://kit.fontawesome.com/374dba34a0.js" crossorigin="anonymous"></script>
 </head>
 
+
+
+
+
+
+
 <body>
+
+
+    <div id="ProgressBar">
+        <div id="Progress"></div>
+    </div>
+
+    <div class="loading">
+
+
     <div class="main-container">
         <header>
             <div class="logo">
@@ -32,146 +47,152 @@
                     </button>
                 </div>
 
-                <div class="nav-head">
-                    <h1>Fonctionnement</h1>
-                </div>
+                    
+                        <div class="nav-head">
+                            <h1>Fonctionnement</h1>
+                        </div>
+                    
+                        <div class="nav-icone">
+                            <div class="iconeb">1</div>
+                            <button class="button" type="button">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span>Choisissez un restaurant</span>
+                            </button>
 
-                <div class="nav-icone">
-                    <div class="iconeb">1</div>
-                    <button class="button" type="button">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <span>Choisissez un restaurant</span>
-                    </button>
+                            <div class="iconeb">2</div>
+                            <button class="button" type="button">
+                                <i class="fa-solid fa-list"></i>
+                                <span>Composez votre menu</span>
+                            </button>
 
-                    <div class="iconeb">2</div>
-                    <button class="button" type="button">
-                        <i class="fa-solid fa-list"></i>
-                        <span>Composez votre menu</span>
-                    </button>
-
-                    <div class="iconeb">3</div>
-                    <button class="button" type="button">
-                        <i class="fa-solid fa-store"></i>
-                        <span>Dégustez au restaurant</span>
-                    </button>
-                </div>
+                            <div class="iconeb">3</div>
+                            <button class="button" type="button">
+                                <i class="fa-solid fa-store"></i>
+                                <span>Dégustez au restaurant</span>
+                            </button>
+                        </div>   
             </nav>
         </header>
     </div>
     <main>
+
+
+
         <section>
             <div class="card">
                 <div class="card-titre">
                     <h1>Restaurants</h1>
                 </div>
-
-                <div class="card-restaurant">
-                    <a href="menuPalette.html">
-                        <div class="card-restaurant-nouveau">
-                            <img class="imgFadeIn1" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="nouveau">
-                            <div class="content">
-                                <p>Nouveau</p>
+                
+                <div class="grill">
+                    <div class="card-restaurant">
+                        <a href="menuPalette.html">
+                            <div class="card-restaurant-nouveau">
+                                <img class="imgFadeIn1" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="nouveau">
+                                <div class="content">
+                                    <p>Nouveau</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
 
-                    <div class="card-main">
-                        <div class="card-nom">
-                            <p>La palette du goût</p>
-                            <div class="card-local">
-                                <p>Ménilmontant</p>
-                            </div>
-                        </div>
                         
-                    
-                        <form method="post" class="form-container" action="#">
-                            <button class="form-button" type="button">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </form>
+
+                        
+                        <div class="card-main">
+                            <div class="card-nom">
+                                <p>La palette du goût</p>
+                                <div class="card-local">
+                                    <p>Ménilmontant</p>
+                                </div>
+                            </div>
+                            
+                        
+                            <form method="post" class="form-container" action="#">
+                                <button class="form-button" type="button" title="press">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card-restaurant">
+                        <a href="menuNote.html">
+                            <div class="card-restaurant-nouveau">
+                                <img  class="imgFadeIn2" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="nouveau">
+                                <div class="content">
+                                    <p>Nouveau</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="card-main">
+                            <div class="card-nom">
+                                <p>La note enchantée</p>
+                                <div class="card-local">
+                                    <p>Charonne</p>
+                                </div>
+                            </div>
+                            
+                            <form method="post" action="#">
+                                <button class="form-button" type="button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card-restaurant">
+                        <a href="menuFrancaise.html">
+                            <div class="card-restaurant-nouveau">
+                                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="nouveau">
+                            </div>
+                        </a>
+
+                        <div class="card-main">
+                            <div class="card-nom">
+                                <p>À la française</p>
+                                <div class="card-local">
+                                    <p>Cité Rouge</p>
+                                </div>
+                            </div>
+                            
+                            <form method="post" action="#">
+                                <button class="form-button" type="button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>    
+                
+
+                    <div class="card-restaurant">
+                        <a href="menuDelice.html">
+                            <div class="card-restaurant-nouveau">
+                                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="nouveau">
+                            </div>
+                        </a>
+
+                        <div class="card-main">
+                            <div class="card-nom">
+                                <p>Le délice des sens</p>
+                                <div class="card-local">
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                            </div>
+                            
+                            <form method="post" action="#">
+                                <button class="form-button" type="button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card-restaurant">
-                    <a href="menuNote.html">
-                        <div class="card-restaurant-nouveau">
-                            <img  class="imgFadeIn2" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="nouveau">
-                            <div class="content">
-                                <p>Nouveau</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <div class="card-main">
-                        <div class="card-nom">
-                            <p>La note enchantée</p>
-                            <div class="card-local">
-                                <p>Charonne</p>
-                            </div>
-                        </div>
-                        
-                        <form method="post" action="#">
-                            <button class="form-button" type="button">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="card-restaurant">
-                    <a href="menuFrancaise.html">
-                        <div class="card-restaurant-nouveau">
-                            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="nouveau">
-                            <div class="content">
-                                <p>Nouveau</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <div class="card-main">
-                        <div class="card-nom">
-                            <p>À la française</p>
-                            <div class="card-local">
-                                <p>Cité Rouge</p>
-                            </div>
-                        </div>
-                        
-                        <form method="post" action="#">
-                            <button class="form-button" type="button">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="card-restaurant">
-                    <a href="menuDelice.html">
-                        <div class="card-restaurant-nouveau">
-                            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="nouveau">
-                            <div class="content">
-                                <p>Nouveau</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <div class="card-main">
-                        <div class="card-nom">
-                            <p>Le délice des sens</p>
-                            <div class="card-local">
-                                <p>Folie-Méricourt</p>
-                            </div>
-                        </div>
-                        
-                        <form method="post" action="#">
-                            <button class="form-button" type="button">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            </div>        
         </section>
     </main>
+
+
 
     <footer>
         <div class="footer-titre">
@@ -189,13 +210,12 @@
             <p>Mentions légales</p>
         </div>
         <div class="footer-icone">
-            <p><a href="#"><strong>Contact</strong></a></p>
+            <p><a href="#">Contact</a></p>
         </div>
     </footer>
     
-    <div class="loader">
-        
-    </div>
+</div>
+
 </body>
 
  
@@ -229,7 +249,6 @@
 
 
 
-        </section>
 
 
 
@@ -340,4 +359,4 @@
 
 
 
-    </main>
+    

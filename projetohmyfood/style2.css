@@ -1,17 +1,22 @@
-@media (max-width: 767.98px) {
 
     body {
         margin: 0px 0px 0px 0px;
     }
 
     header {
-        display: flex;
+        text-align: center;
+         display:inline;
+        grid-template-columns: 5% 95%;
+        grid-row-gap: 43px;
         
         
     }
 
     .header-logo img {
-        width: 50%;
+        margin-left: 25%;
+        width: 30%;
+        max-width: 30%;
+        min-width: 10%;
         
     }
 
@@ -23,13 +28,12 @@
    .header-menu {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     padding-right: 100px;
         
    }
 
    .header-menu i {
-    width: 30%;
+    width: 10%;
     color: black;
     font-size: 17px;
     font-weight: bold;
@@ -58,16 +62,28 @@
     border-top-left-radius: 20px;
    }
 
-   .menu-main-N {
-    width: 100%;
-    background-color: #F6F7F7;
-    position: absolute;
-    height: 1170px;
-    top: 320px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+   @media screen and (min-width: 768px) and (max-width: 2000px) {
+    .menu-main {
+        width: 70%;
+        margin-left: 10%;
+        margin-right: -10%;
+        padding-left: 10%;
+        max-height: 1075px;
+        top: 361px;
+    }
+    .menu-restaurant{
+        margin-left: 25%;
+    }
    }
 
+
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+    .footer-icone :nth-child(1) { order: 1; }
+    .footer-icone :nth-child(2) { order: 1; }
+
+}
+
+   
    .menu-restaurant {
     display: flex;
     flex-direction: row;
@@ -308,6 +324,49 @@
     box-shadow: 0 5px 5px -5px black;
    }
 
+
+   @media screen and (min-width: 768px) and (max-width: 2000px) {
+        
+    footer {
+        display: flex;
+        padding-left: 40%;
+        padding-right: 5%;
+        height: 50px;
+        position: relative;
+        top: 50%;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    footer :nth-child(1) { order: 2; }
+    footer :nth-child(2) { order: 1; }
+    footer :nth-child(3) { order: 1; }
+    footer :nth-child(4) { order: 1; }
+    footer :nth-child(5) { order: 1; }
+
+
+
+        
+    
+}
+
+@media screen and (max-width: 768px) {
+        
+
+    footer {
+        height: 163px;
+        margin-top: 1030px;
+        font-size: 12px;
+        font-family: "roboto";
+        color: white;
+        background-color: #414141;
+        padding: 20px 0px 0px 25px;
+       }
+
+        
+    
+}
+
    footer {
     height: 163px;
     margin-top: 1030px;
@@ -315,7 +374,6 @@
     font-family: "roboto";
     color: white;
     background-color: #414141;
-    padding: 20px 0px 0px 25px;
    }
 
    .footer-note {
@@ -352,7 +410,7 @@
         margin-right: 8px;
     }
 
-}
+
 
 
 
